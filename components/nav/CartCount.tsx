@@ -11,7 +11,7 @@ const CartCount = () => {
      <div className="text-2xl ">
         <CiShoppingCart size={29}/>
      </div>
-     <span className="absolute top-[-10px] right-[-10px] bg-slate-700 text-white h-5 w-5 flex rounded-full items-center justify-center text-xs">
+     <span className="absolute top-[-10px] right-[-10px] bg-green-700 text-white h-5 w-5 flex rounded-full items-center justify-center text-xs">
       {cartTotalQty}
      </span>
     </div>

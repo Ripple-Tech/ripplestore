@@ -38,7 +38,7 @@ const handleFileChange = useCallback(
 
   return (
     <div className="grid grid-cols-1 overflow-y-auto border-b-[1.2px]
-    border-slate-200 items-center p-2">
+    border-green-200 items-center p-2">
      <div className="flex flex-row gap-2 items-center h-[60px]">
         < input id={item.color} type="checkbox" checked={isSelected} onChange={handleCheck}
         className="cursor-pointer"/>

@@ -72,7 +72,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({currentUser}) => {
        onClick={() => {signIn('google')}}
        />
       <Heading title="Sign up for Ripplestore"/>
-      <hr className='bg-slate-400 w-full h-px'/>
+      <hr className='bg-green-400 w-full h-px'/>
       <Input 
         id="name"
         label="Name"

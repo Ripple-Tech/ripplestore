@@ -45,7 +45,7 @@ const ManageOrdersClient: React.FC<ManageOrdersClientProps> = ({orders}) => {
     {field: 'customer', headerName: 'Customer Name', width: 130},
     {field: 'amount', headerName: 'Amount(USD)', width: 130,
      renderCell: (params) => {
-      return (<div className="font-bold text-slate-800">{params.row.amount}</div>)
+      return (<div className="font-bold text-green-800">{params.row.amount}</div>)
     },
   },
     
@@ -55,8 +55,8 @@ const ManageOrdersClient: React.FC<ManageOrdersClientProps> = ({orders}) => {
       <Status 
       text='pending'
       icon={MdDone}
-      bg="bg-slate-200"
-      color="text-slate-700"
+      bg="bg-green-200"
+      color="text-green-700"
       />) : params.row.paymentStatus === 'complete' ? (
       <Status 
       text='completed'
@@ -73,8 +73,8 @@ const ManageOrdersClient: React.FC<ManageOrdersClientProps> = ({orders}) => {
       'pending' ? (<Status 
       text='pending'
       icon={MdDone}
-      bg="bg-slate-200"
-      color="text-slate-700"
+      bg="bg-green-200"
+      color="text-green-700"
       />) : params.row.deliveryStatus === 'dispatched' ? (
       <Status 
       text='dispatched'

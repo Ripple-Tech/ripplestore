@@ -24,8 +24,8 @@ const UserMenu: React.FC<UserMenuProps> = ({currentUser}) => {
     <>
       <div className="relative z-30">
         <div onClick={toggleOpen} className="p-2 border-[1px]
-         border-slate-400 flex flex-row items-center gap-1 rounded-full 
-         cursor-pointer hover:shadow-md transition text-slate-700  
+         border-green-400 flex flex-row items-center gap-1 rounded-full 
+         cursor-pointer hover:shadow-md transition text-green-700  
         ">
          <Avatar src={currentUser?.image}/>
          <AiFillCaretDown />
@@ -45,7 +45,7 @@ const UserMenu: React.FC<UserMenuProps> = ({currentUser}) => {
                   Admin Dashboard
                  </MenuItem>
                </Link>
-               <hr className="bg-slate-700"/>
+               <hr className="bg-green-700"/>
                <MenuItem onClick={() => {
                 toggleOpen();
                 signOut();

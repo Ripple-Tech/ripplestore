@@ -24,7 +24,7 @@ const CartClient: React.FC<CartClientProps> = ({currentUser}) => {
          <div className="flex flex-col items-center"> 
             <div className="text-2xl">Your cart is empty </div>
          <div>
-           <Link href={"/"} className="text-slate-500 flex items-center gap-1 mt-2 ">
+           <Link href={"/"} className="text-green-500 flex items-center gap-1 mt-2 ">
             <MdArrowBack />
            <span>Start Shopping</span>
            </Link>
@@ -49,7 +49,7 @@ const CartClient: React.FC<CartClientProps> = ({currentUser}) => {
         )}
       )}
       </div>
-      <div className="border-t-[1.5px] border-slate-200 py-4 flex justify-between gap-4">
+      <div className="border-t-[1.5px] border-green-200 py-4 flex justify-between gap-4">
         <div className="w-[90px]">
           <Button label="Clear Cart" onClick={() => {handleClearCart()}} small outline />
         </div>
@@ -59,12 +59,12 @@ const CartClient: React.FC<CartClientProps> = ({currentUser}) => {
             <span> {formatPrice(cartTotalAmount) }</span>
             </div>
             
-            <p className="text-slate-500">Taxes and shipping calculated at checkout</p>
+            <p className="text-green-500">Taxes and shipping calculated at checkout</p>
            <Button 
            label={currentUser ? 'Checkout' : 'Login To Checkout'} 
            outline={currentUser ? false : true}
            onClick={() => { currentUser ? router.push('/checkout') : router.push('/login') }}/>
-           <Link href={"/"} className="text-slate-500 flex items-center gap-1 mt-2 ">
+           <Link href={"/"} className="text-green-500 flex items-center gap-1 mt-2 ">
             <MdArrowBack />
            <span>Continue Shopping</span>
            </Link>

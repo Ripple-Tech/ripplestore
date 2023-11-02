@@ -19,8 +19,7 @@ const CheckoutClient = () => {
    
      const router = useRouter();
 
-     console.log("paymentIntent", paymentIntent);
-     console.log("clientSecret", clientSecret);
+    
 
    useEffect(() => {
     if(cartProducts){
@@ -87,7 +86,7 @@ const CheckoutClient = () => {
             <div className='flex items-center flex-col gap-4'>
                 <div className='text-teal-500 text-center'> Payment Success</div>
                 <div className='max-w-[220px] w-full '>
-                    <Button label='View Your Orders' onClick={() => router.push('/orders')}/>
+                    <Button label='View Your Orders' onClick={() => router.push('/order')}/>
                 </div>
             </div>
         )}
