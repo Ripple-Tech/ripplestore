@@ -67,7 +67,7 @@ const LoginForm: React.FC<LoginFormProps> = ({currentUser}) => {
        onClick={() => {signIn('google')}}
        />
       <Heading title="Sign In for E-shop"/>
-      <hr className='bg-green-400 w-full h-px'/>
+      <hr className='bg-slate-400 w-full h-px'/>
       
        <Input 
         id="email"

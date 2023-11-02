@@ -45,7 +45,7 @@ const OrdersClient: React.FC<OrdersClientProps> = ({orders}) => {
     {field: 'customer', headerName: 'Customer Name', width: 130},
     {field: 'amount', headerName: 'Amount(USD)', width: 130,
      renderCell: (params) => {
-      return (<div className="font-bold text-green-800">{params.row.amount}</div>)
+      return (<div className="font-bold text-slate-800">{params.row.amount}</div>)
     },
   },
     
@@ -55,14 +55,14 @@ const OrdersClient: React.FC<OrdersClientProps> = ({orders}) => {
       <Status 
       text='pending'
       icon={MdDone}
-      bg="bg-green-200"
-      color="text-green-700"
+      bg="bg-slate-200"
+      color="text-slate-700"
       />) : params.row.paymentStatus === 'complete' ? (
       <Status 
       text='completed'
       icon={MdDone}
-      bg="bg-green-200"
-      color="text-green-700"
+      bg="bg-slate-200"
+      color="text-slate-700"
       />) :( <></>
       )}</div>)
     },
@@ -73,8 +73,8 @@ const OrdersClient: React.FC<OrdersClientProps> = ({orders}) => {
       'pending' ? (<Status 
       text='pending'
       icon={MdDone}
-      bg="bg-green-200"
-      color="text-green-700"
+      bg="bg-slate-200"
+      color="text-slate-700"
       />) : params.row.deliveryStatus === 'dispatched' ? (
       <Status 
       text='dispatched'
@@ -85,8 +85,8 @@ const OrdersClient: React.FC<OrdersClientProps> = ({orders}) => {
       <Status 
       text='delivered'
       icon={MdDone}
-      bg="bg-green-200"
-      color="text-green-700"
+      bg="bg-slate-200"
+      color="text-slate-700"
       />) : (<></>
       )}</div>)
     },

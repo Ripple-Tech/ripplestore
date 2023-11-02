@@ -17,8 +17,8 @@ const SelectImage: React.FC<SelectImageProps> = ({ item, handleFileChange  }) =>
  accept: {'image/*': ['.jpg', '.jpeg', '.png']} 
 });
     return (
-    <div {...getRootProps()} className="border-2 border-green-400 p-2 border-dashed
-    cursor-pointer text-sm font-normal text-green-400 items-center justify-center">
+    <div {...getRootProps()} className="border-2 border-slate-400 p-2 border-dashed
+    cursor-pointer text-sm font-normal text-slate-400 items-center justify-center">
         <input {...getInputProps()} />
         {isDragActive ? (<p>Drop the image here...</p>) : (
         <p>+ {item?.color} Image</p>)}

@@ -94,8 +94,8 @@ const ProductDetails:React.FC<ProductDetailsProps> = ({ product }) => {
            handleColorSelect={handleColorSelect}
           />
         </div>
-        <div className="flex flex-col gap-1 text-green-500 text-sm">
-        <h2 className="text-3xl font-medium text-green-700">
+        <div className="flex flex-col gap-1 text-slate-500 text-sm">
+        <h2 className="text-3xl font-medium text-slate-700">
             {product.name}
         </h2>
     <div className="flex items-center gap-3 ">
@@ -117,7 +117,7 @@ const ProductDetails:React.FC<ProductDetailsProps> = ({ product }) => {
        <Horizontal/>
       {isProductInCart ? 
       <>
-       <p className="mb-2 text-green-500 flex item-center gap-1"> <MdCheckCircle size={20} className="text-teal-400"/>
+       <p className="mb-2 text-slate-500 flex item-center gap-1"> <MdCheckCircle size={20} className="text-teal-400"/>
         <span>Product added to cart</span>
        </p>
        <div className="max-w-[300px]">

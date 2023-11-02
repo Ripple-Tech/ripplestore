@@ -15,7 +15,7 @@ interface ItemContentProps{
 const ItemContent: React.FC<ItemContentProps> = ({item}) => {
   const {handleRemoveProductFromcart, handleCartQtyincrease, handleCartQtyDecrease,} = useCart()
   return (
-    <div className="grid grid-cols-5 text-xs gap-4 md:text-sm border-t-[1.5px] border-green-200 py-4 items-center">
+    <div className="grid grid-cols-5 text-xs gap-4 md:text-sm border-t-[1.5px] border-slate-200 py-4 items-center">
       <div className="col-span-2 justify-self-start flex gap-2 md:gap-4">
          <Link href={`/product/${item.id}`}>
             <div className="relative w-[70px] aspect-square">
@@ -33,7 +33,7 @@ const ItemContent: React.FC<ItemContentProps> = ({item}) => {
             </Link>
               <div>{item.selectedImg.color}</div>
               <div className="w-[70px] ">
-              <button onClick={() => handleRemoveProductFromcart(item)} className="text-green-500 underline">Remove</button>
+              <button onClick={() => handleRemoveProductFromcart(item)} className="text-slate-500 underline">Remove</button>
               </div>
            
          </div>

@@ -42,7 +42,7 @@ const ManageProductClient: React.FC<ManageProductClientProps> = ({products}) => 
     {field: 'name', headerName: 'Name', width: 220},
     {field: 'price', headerName: 'Price(USD)', width: 100,
      renderCell: (params) => {
-      return (<div className="font-bold text-green-800">{params.row.price}</div>)
+      return (<div className="font-bold text-slate-800">{params.row.price}</div>)
     },
   },
     {field: 'category', headerName: 'Category', width: 100},

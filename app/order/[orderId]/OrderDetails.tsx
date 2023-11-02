@@ -25,8 +25,8 @@ const OrderDetails:React.FC<OrderDetailsProps> = ({order}) => {
         <Status
          text="pending"
          icon={MdAccessTimeFilled}
-         bg="bg-green-200"
-         color="text-green-700"
+         bg="bg-slate-200"
+         color="text-slate-700"
       />
       )
        : 
@@ -34,8 +34,8 @@ const OrderDetails:React.FC<OrderDetailsProps> = ({order}) => {
        <Status
       text="completed"
       icon={MdDone}
-      bg="bg-green-200"
-      color="text-green-700"
+      bg="bg-slate-200"
+      color="text-slate-700"
    />) : (<> </> ) }
        </div>
      </div>
@@ -47,8 +47,8 @@ const OrderDetails:React.FC<OrderDetailsProps> = ({order}) => {
         <Status
          text="pending"
          icon={MdAccessTimeFilled}
-         bg="bg-green-200"
-         color="text-green-700"
+         bg="bg-slate-200"
+         color="text-slate-700"
       />
       )
        : 
@@ -63,8 +63,8 @@ const OrderDetails:React.FC<OrderDetailsProps> = ({order}) => {
     <Status
    text="delivered"
    icon={MdDone}
-   bg="bg-green-200"
-   color="text-green-700"
+   bg="bg-slate-200"
+   color="text-slate-700"
 />) :
     (<> </> ) }
        </div>
