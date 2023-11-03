@@ -1,7 +1,7 @@
 "use client"
 import { useCart } from '@/hooks/useCart'
 import React, { useEffect, useState, useCallback } from 'react'
-import { useRouter } from 'next/navigation'
+import { useRouter } from 'next/router'
 import toast from 'react-hot-toast'
 import { StripeElementsOptions, loadStripe } from '@stripe/stripe-js'
 import { Elements } from '@stripe/react-stripe-js'
